@@ -1,0 +1,60 @@
+$purple: #9147ff;
+
+.logo-home {
+	border: 0;
+	box-sizing: border-box;
+	margin: 0;
+	height: 150px;
+	width: 150px;
+	padding: 7rem;
+	display: flex;
+	justify-content: left;
+	font-size: 100px;
+	margin-top: 50px;
+
+	position: relative;
+	vertical-align: middle;
+
+	&::before,
+	&::after {
+		box-sizing: inherit;
+		content: '';
+		position: absolute;
+		width: 0;
+		height: 0;
+	}
+}
+
+.draw {
+	transition: color 0.25s;
+
+	&::before,
+	&::after {
+		border: 2px solid transparent;
+		width: 100%;
+		height: 100%;
+	}
+
+	&::before {
+		top: 0;
+		left: 0;
+		border-top-color: $purple;
+		border-right-color: $purple;
+		transition: 0.25s ease-out, height 0.25s ease-out 0.25s;
+	}
+
+	&::after {
+		bottom: 0;
+		right: 0;
+		border-bottom-color: $purple;
+		border-left-color: $purple;
+		transition: 0s ease-out 0.5s, width 0.25s ease-out 0.5s,
+			height 0.25s ease-out 0.75s;
+	}
+}
+
+@media (max-width: 480px) {
+	.logo-home {
+		display: none;
+	}
+}

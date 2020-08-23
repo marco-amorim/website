@@ -1,5 +1,6 @@
 .page-header {
 	width: 100vw;
+	height: 50px;
 	display: flex;
 	justify-content: center;
 	background-color: #26262c;
@@ -7,6 +8,25 @@
 
 .page-header ul {
 	margin: 0;
+}
+
+.nav-link:after {
+	display: block;
+	content: '';
+	border-bottom: solid 3px #9147ff;
+	transform: scaleX(0);
+	transition: transform 250ms ease-in-out;
+}
+.nav-link:hover:after {
+	transform: scaleX(1);
+}
+
+.page-header li:active {
+	border-bottom-color: var(--light-purple);
+}
+
+.selected-item {
+	color: var(--light-purple);
 }
 
 .logo-header {

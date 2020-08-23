@@ -1,6 +1,6 @@
 :root {
-	--main-background: #0E0E10;
-	--text-base: #EFEFF1;
+	--main-background: #0e0e10;
+	--text-base: #efeff1;
 	--light-purple: #9147ff;
 
 	font-size: 60%;
@@ -35,6 +35,11 @@ a {
 }
 
 a:hover {
+	color: var(--light-purple);
+	text-decoration: none;
+}
+
+a:active {
 	color: var(--light-purple);
 	text-decoration: none;
 }

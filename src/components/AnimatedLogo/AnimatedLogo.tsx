@@ -1,17 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
-import './styles.css';
+import './styles.scss';
 
 const AnimatedLogo = () => {
+	useEffect(() => {
+		document.getElementById('animatedLogo')?.classList.add('draw');
+	}, []);
+
 	return (
 		<div>
-			<div className="box-outer logo-home">
-				<div className="main_box d-flex align-items-center justify-content-center">
-					<div className="bar top"></div>
-					<div className="bar right delay"></div>
-					<div className="bar bottom delay"></div>
-					<div className="bar left"></div>M
-				</div>
+			<div id="animatedLogo" className="logo-home d-flex align-items-center justify-content-center mx-auto">
+				M
 			</div>
 		</div>
 	);
