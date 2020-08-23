@@ -7,8 +7,11 @@ const Header = () => {
 	return (
 		<nav
 			id="header"
-			className="page-header navbar navbar-expand-lg navbar-dark bg-dark"
+			className="page-header navbar navbar-expand-lg"
 		>
+      {/* TODO: find a nice font for the logo */}
+			<a href="/" className="logo-ma">M</a>
+
 			<ul className="navbar list-unstyled">
 				<li className="nav-item">
 					<Link className="nav-link" to="/">

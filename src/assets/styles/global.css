@@ -1,9 +1,9 @@
 :root {
-	--color-black: #24292e;
+	--color-black: #0E0E10;
 	--color-grey: #808080;
 	--color-grey-lighter: #abb2bf;
 	--color-white: #ffffff;
-	--color-text-base: #9da5b4;
+	--color-text-base: #EFEFF1;
 
 	font-size: 60%;
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, BrowserRouter } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import Landing from './pages/Landing/Landing';
 import Portfolio from './pages/Portfolio/Portfolio';
 import Certificates from './pages/Certificates/Certificates';

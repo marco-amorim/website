@@ -1,9 +1,19 @@
 .page-header {
 	width: 100vw;
 	display: flex;
-	justify-content: center;
+  justify-content: center;
+  background-color: #26262C;
 }
 
 .page-header ul {
 	margin: 0;
+}
+
+.logo-ma {
+	border: 3px solid;
+	font-size: 24px;
+	padding: 0px 5px;
+	border-color: #9147ff;
+  color: white;
+  font-family: 'Quando';
 }
