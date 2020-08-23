@@ -3,12 +3,16 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 
 import './assets/styles/global.css';
+import Routes from './routes';
+import { BrowserRouter } from 'react-router-dom';
 
 const App = () => {
 	return (
 		<div>
-			<Header />
-
+			<BrowserRouter>
+				<Header />
+				<Routes />
+			</BrowserRouter>
 			<Footer />
 		</div>
 	);
