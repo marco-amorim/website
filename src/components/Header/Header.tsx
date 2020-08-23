@@ -57,7 +57,7 @@ const Header = () => {
 			</nav>
 
 			<nav id="menu-mobile" className="page-header navbar navbar-expand-lg">
-				<a href="/" className="logo-header">
+				<a href="/" className="logo-header rotate-in-center">
 					M
 				</a>
 			</nav>
