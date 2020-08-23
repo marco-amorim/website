@@ -1,9 +1,7 @@
 :root {
-	--color-black: #0E0E10;
-	--color-grey: #808080;
-	--color-grey-lighter: #abb2bf;
-	--color-white: #ffffff;
-	--color-text-base: #EFEFF1;
+	--main-background: #0E0E10;
+	--text-base: #EFEFF1;
+	--light-purple: #9147ff;
 
 	font-size: 60%;
 }
@@ -14,14 +12,8 @@
 	box-sizing: border-box;
 }
 
-html,
-body,
-#root {
-	/* height: 50vh; */
-}
-
 body {
-	background: var(--color-black);
+	background: var(--main-background);
 }
 
 #root {
@@ -34,43 +26,16 @@ body,
 input,
 button,
 textarea {
-	font: 500 1.6rem Poppins;
-	color: var(--color-text-base);
-}
-
-button {
-	margin-left: auto;
-	display: flex;
-	align-items: flex-end;
-	padding: 5px 10px;
-	background-color: var(--color-grey);
-	border: none;
-	color: var(--color-white);
-	margin-top: 1.5rem;
-	transition: background-color 0.2s;
-	border-radius: 5px;
-}
-
-button:focus {
-	border: none;
-	outline: none;
-}
-
-button:hover {
-	background-color: var(--color-grey-lighter);
-}
-
-button:active {
-	background-color: var(--color-white);
-	color: var(--color-black);
+	font: 500 1.6rem Quando;
+	color: var(--text-base);
 }
 
 a {
-	color: var(--color-text-base);
+	color: var(--text-base);
 }
 
 a:hover {
-	color: var(--color-white);
+	color: var(--light-purple);
 	text-decoration: none;
 }
 
