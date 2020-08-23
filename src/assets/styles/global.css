@@ -1,0 +1,86 @@
+:root {
+	--color-black: #24292e;
+	--color-grey: #808080;
+	--color-grey-lighter: #abb2bf;
+	--color-white: #ffffff;
+	--color-text-base: #9da5b4;
+
+	font-size: 60%;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+	/* height: 50vh; */
+}
+
+body {
+	background: var(--color-black);
+}
+
+#root {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+body,
+input,
+button,
+textarea {
+	font: 500 1.6rem Poppins;
+	color: var(--color-text-base);
+}
+
+button {
+	margin-left: auto;
+	display: flex;
+	align-items: flex-end;
+	padding: 5px 10px;
+	background-color: var(--color-grey);
+	border: none;
+	color: var(--color-white);
+	margin-top: 1.5rem;
+	transition: background-color 0.2s;
+	border-radius: 5px;
+}
+
+button:focus {
+	border: none;
+	outline: none;
+}
+
+button:hover {
+	background-color: var(--color-grey-lighter);
+}
+
+button:active {
+	background-color: var(--color-white);
+	color: var(--color-black);
+}
+
+a {
+	color: var(--color-text-base);
+}
+
+a:hover {
+	color: var(--color-white);
+	text-decoration: none;
+}
+
+.container {
+	width: 90vw;
+	max-width: 700px;
+}
+
+@media (min-width: 700px) {
+	:root {
+		font-size: 62.5%;
+	}
+}
