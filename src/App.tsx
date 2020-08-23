@@ -7,11 +7,9 @@ import './assets/styles/global.css';
 const App = () => {
 	return (
 		<div>
-      <div className="w-100">
 			<Header />
-      </div>
 
-      <Footer />
+			<Footer />
 		</div>
 	);
 };

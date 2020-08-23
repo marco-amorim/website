@@ -1,7 +1,17 @@
 .page-footer {
 	position: absolute;
 	bottom: 0;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+}
+
+.page-footer li {
+	margin-right: 2rem;
+}
+
+@media(max-width: 480px) {
+	.page-footer ul {
+		flex-direction: column;
+	}
 }
