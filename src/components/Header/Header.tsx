@@ -10,7 +10,7 @@ const Header = () => {
 			className="page-header navbar navbar-expand-lg"
 		>
       {/* TODO: find a nice font for the logo */}
-			<a href="/" className="logo-ma">M</a>
+			<a href="/" className="logo-header">M</a>
 
 			<ul className="navbar list-unstyled">
 				<li className="nav-item">
