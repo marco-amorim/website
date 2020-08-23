@@ -38,8 +38,20 @@
 	font-family: 'Quando';
 }
 
+/* Desktop */
 @media (min-width: 480px) {
 	.logo-header {
+		display: none;
+	}
+
+	#menu-mobile {
+		display: none;
+	}
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+	#menu-desktop {
 		display: none;
 	}
 }
