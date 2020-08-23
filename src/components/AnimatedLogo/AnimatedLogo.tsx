@@ -5,6 +5,7 @@ import './styles.scss';
 const AnimatedLogo = () => {
 	useEffect(() => {
 		document.getElementById('animated-logo')?.classList.add('draw');
+		
 		setTimeout(function () {
 			document
 				.getElementById('animated-logo')
