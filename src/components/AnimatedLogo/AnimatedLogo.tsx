@@ -4,7 +4,7 @@ import './styles.css';
 
 const AnimatedLogo = () => {
 	return (
-		<div className="logo-home-container">
+		<div>
 			<div className="box-outer logo-home">
 				<div className="main_box d-flex align-items-center justify-content-center">
 					<div className="bar top"></div>
