@@ -4,27 +4,49 @@ import './styles.css';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
-	const [selected, setSelected] = useState(
-		document.querySelectorAll('.nav-link')[0]
+	const [selectedDesktop, setSelectedDesktop] = useState(
+		document.querySelectorAll('.desktop-link')[0]
+	);
+	const [selectedMobile, setSelectedMobile] = useState(
+		document.querySelectorAll('.mobile-link')[0]
 	);
 
 	useEffect(() => {
-		document.querySelectorAll('.nav-link').forEach((item) => {
+		document.querySelectorAll('.desktop-link').forEach((item) => {
 			item.addEventListener('click', function () {
-				setSelected(item);
+				setSelectedDesktop(item);
 			});
-			if (selected === item) {
+			if (selectedDesktop === item) {
 				item.classList.add('selected-item');
 			} else {
 				item.classList.remove('selected-item');
 			}
 		});
-	}, [selected]);
+	}, [selectedDesktop]);
 
 	useEffect(() => {
-		document.querySelectorAll('.nav-link').forEach((item) => {
+		document.querySelectorAll('.mobile-link').forEach((item) => {
+			item.addEventListener('click', function () {
+				setSelectedMobile(item);
+			});
+			if (selectedMobile === item) {
+				item.classList.add('selected-item');
+			} else {
+				item.classList.remove('selected-item');
+			}
+		});
+	}, [selectedMobile]);
+
+	useEffect(() => {
+		document.querySelectorAll('.desktop-link').forEach((item) => {
 			if (item.getAttribute('href') === window.location.pathname) {
-				setSelected(item);
+				setSelectedDesktop(item);
+			}
+		});
+
+		document.querySelectorAll('.mobile-link').forEach((item) => {
+			if (item.getAttribute('href') === window.location.pathname) {
+				setSelectedMobile(item);
 			}
 		});
 
@@ -46,6 +68,21 @@ const Header = () => {
 		} else {
 			document.getElementById('mobile-menu')?.classList.toggle('slide-out-top');
 		}
+
+		document
+			.querySelectorAll('#mobile-menu > ul > li > a')
+			.forEach((element) => {
+				element.addEventListener('click', function () {
+					setTimeout(function () {
+						document
+							.getElementById('mobile-menu')
+							?.classList.add('slide-out-top');
+						document
+							.querySelector('.animated-hamburguer-icon')
+							?.classList.remove('open');
+					}, 300);
+				});
+			});
 	}
 
 	return (
@@ -57,22 +94,22 @@ const Header = () => {
 
 				<ul className="navbar list-unstyled">
 					<li className="nav-item">
-						<Link className="nav-link" to="/">
+						<Link className="nav-link desktop-link" to="/">
 							Home
 						</Link>
 					</li>
 					<li className="nav-item">
-						<Link className="nav-link" to="/portfolio">
+						<Link className="nav-link desktop-link" to="/portfolio">
 							Portfolio
 						</Link>
 					</li>
 					<li className="nav-item">
-						<Link className="nav-link" to="/certificates">
+						<Link className="nav-link desktop-link" to="/certificates">
 							Certificates
 						</Link>
 					</li>
 					<li className="nav-item">
-						<Link className="nav-link" to="/contact">
+						<Link className="nav-link desktop-link" to="/contact">
 							Contact
 						</Link>
 					</li>
@@ -107,22 +144,22 @@ const Header = () => {
 				>
 					<ul className="navbar list-unstyled mobile-menu">
 						<li className="nav-item">
-							<Link className="nav-link" to="/">
+							<Link className="nav-link mobile-link" to="/">
 								Home
 							</Link>
 						</li>
 						<li className="nav-item">
-							<Link className="nav-link" to="/portfolio">
+							<Link className="nav-link mobile-link" to="/portfolio">
 								Portfolio
 							</Link>
 						</li>
 						<li className="nav-item">
-							<Link className="nav-link" to="/certificates">
+							<Link className="nav-link mobile-link" to="/certificates">
 								Certificates
 							</Link>
 						</li>
 						<li className="nav-item">
-							<Link className="nav-link" to="/contact">
+							<Link className="nav-link mobile-link" to="/contact">
 								Contact
 							</Link>
 						</li>
