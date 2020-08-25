@@ -6,10 +6,10 @@
 
 - Home
   - Greetings
+  - Some Technologies I work with
+  - Soft skills
   - Experience
   - Education
-  - Technologies I work with
-  - Soft skills
 - Portfolio
   - Github projects
 - Certificates
