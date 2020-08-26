@@ -2,15 +2,15 @@ import React from 'react';
 
 import './styles.css';
 
-import githubIcon from '../../assets/images/icons/github.svg';
-import codewarsIcon from '../../assets/images/icons/codewars.svg';
-import linkedinIcon from '../../assets/images/icons/linkedin.svg';
-import stackoverflowIcon from '../../assets/images/icons/stackoverflow.svg';
+import githubIcon from '../../assets/images/icons/social-media/github.svg';
+import codewarsIcon from '../../assets/images/icons/social-media/codewars.svg';
+import linkedinIcon from '../../assets/images/icons/social-media/linkedin.svg';
+import stackoverflowIcon from '../../assets/images/icons/social-media/stackoverflow.svg';
 
-import githubIconHover from '../../assets/images/icons/github-hover.svg';
-import codewarsIconHover from '../../assets/images/icons/codewars-hover.svg';
-import linkedinIconHover from '../../assets/images/icons/linkedin-hover.svg';
-import stackoverflowIconHover from '../../assets/images/icons/stackoverflow-hover.svg';
+import githubIconHover from '../../assets/images/icons/social-media/github-hover.svg';
+import codewarsIconHover from '../../assets/images/icons/social-media/codewars-hover.svg';
+import linkedinIconHover from '../../assets/images/icons/social-media/linkedin-hover.svg';
+import stackoverflowIconHover from '../../assets/images/icons/social-media/stackoverflow-hover.svg';
 
 const Footer = () => {
 	function hoverImg(e: any) {
