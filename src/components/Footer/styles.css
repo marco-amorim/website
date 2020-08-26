@@ -4,14 +4,30 @@
 	width: 100vw;
 	display: flex;
 	justify-content: center;
+	align-items: center;
 }
 
-.page-footer li {
+.page-footer li:not(:last-child) {
 	margin-right: 2rem;
 }
 
+.page-footer img {
+	height: 28px;
+	width: 28px;
+}
+
+.copyright {
+	margin-right: 5rem;
+	font-size: 1.5rem;
+}
+
 @media(max-width: 480px) {
-	.page-footer ul {
-		flex-direction: column;
+	.page-footer {
+		flex-direction: column-reverse;
+	}
+
+	.copyright {
+		margin-right: 0;
+		margin-bottom: 1.5rem;
 	}
 }
