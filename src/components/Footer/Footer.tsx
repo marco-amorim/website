@@ -6,11 +6,13 @@ import githubIcon from '../../assets/images/icons/social-media/github.svg';
 import codewarsIcon from '../../assets/images/icons/social-media/codewars.svg';
 import linkedinIcon from '../../assets/images/icons/social-media/linkedin.svg';
 import stackoverflowIcon from '../../assets/images/icons/social-media/stackoverflow.svg';
+import emailIcon from '../../assets/images/icons/social-media/email.svg';
 
 import githubIconHover from '../../assets/images/icons/social-media/github-hover.svg';
 import codewarsIconHover from '../../assets/images/icons/social-media/codewars-hover.svg';
 import linkedinIconHover from '../../assets/images/icons/social-media/linkedin-hover.svg';
 import stackoverflowIconHover from '../../assets/images/icons/social-media/stackoverflow-hover.svg';
+import emailIconHover from '../../assets/images/icons/social-media/email-hover.svg';
 
 const Footer = () => {
 	function hoverImg(e: any) {
@@ -30,6 +32,10 @@ const Footer = () => {
 
 		if (src.includes('stackoverflow')) {
 			e.target.src = stackoverflowIconHover;
+		}
+
+		if (src.includes('email')) {
+			e.target.src = emailIconHover;
 		}
 	}
 
@@ -51,10 +57,14 @@ const Footer = () => {
 		if (src.includes('stackoverflow')) {
 			e.target.src = stackoverflowIcon;
 		}
+
+		if (src.includes('email')) {
+			e.target.src = emailIcon;
+		}
 	}
 
 	return (
-		<div className="page-footer">
+		<footer className="page-footer">
 			<div className="copyright">Copyright © 2020 Marco Amorim</div>
 			<ul className="d-flex list-unstyled">
 				<li className="navitem">
@@ -113,8 +123,18 @@ const Footer = () => {
 						/>
 					</a>
 				</li>
+				<li className="navitem">
+					<a href="mailto:marcoamorim95@hotmail.com" rel="noopener noreferrer" target="_blank">
+						<img
+							onMouseOver={(e) => hoverImg(e)}
+							onMouseOut={(e) => unHoverImg(e)}
+							src={emailIcon}
+							alt="E-mail"
+						/>
+					</a>
+				</li>
 			</ul>
-		</div>
+		</footer>
 	);
 };
 
