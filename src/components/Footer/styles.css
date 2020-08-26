@@ -26,6 +26,10 @@
 	.page-footer ul {
 		margin: 0;
 	}
+
+	.page-footer {
+		margin-bottom: 1rem;
+	}
 }
 
 /* Mobile */
