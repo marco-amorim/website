@@ -67,7 +67,7 @@ const Footer = () => {
 							onMouseOver={(e) => hoverImg(e)}
 							onMouseOut={(e) => unHoverImg(e)}
 							src={githubIcon}
-							alt=""
+							alt="Github"
 						/>
 					</a>
 				</li>
@@ -81,7 +81,7 @@ const Footer = () => {
 							onMouseOver={(e) => hoverImg(e)}
 							onMouseOut={(e) => unHoverImg(e)}
 							src={linkedinIcon}
-							alt=""
+							alt="LinkedIn"
 						/>
 					</a>
 				</li>
@@ -95,7 +95,7 @@ const Footer = () => {
 							onMouseOver={(e) => hoverImg(e)}
 							onMouseOut={(e) => unHoverImg(e)}
 							src={codewarsIcon}
-							alt=""
+							alt="Codewars"
 						/>
 					</a>
 				</li>
@@ -109,7 +109,7 @@ const Footer = () => {
 							onMouseOver={(e) => hoverImg(e)}
 							onMouseOut={(e) => unHoverImg(e)}
 							src={stackoverflowIcon}
-							alt=""
+							alt="StackOverflow"
 						/>
 					</a>
 				</li>
