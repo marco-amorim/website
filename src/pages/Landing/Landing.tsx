@@ -8,7 +8,7 @@ const Landing = () => {
 		setTimeout(function () {
 			document.getElementById('introImg')?.classList.remove('d-none');
 			document.getElementById('introImg')?.classList.add('d-flex');
-			document.getElementById('intro')?.classList.add('puff-in-center');
+			document.getElementById('intro')?.classList.add('fade-in');
 		}, 2700);
 	}, []);
 
