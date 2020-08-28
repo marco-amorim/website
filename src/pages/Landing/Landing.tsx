@@ -8,8 +8,16 @@ const Landing = () => {
 		setTimeout(function () {
 			document.getElementById('intro-img')?.classList.remove('d-none');
 			document.getElementById('intro-img')?.classList.add('d-flex');
-			document.getElementById('intro')?.classList.add('fade-in');
+			document.getElementById('intro-img')?.classList.add('fade-in');
 		}, 2700);
+	}, []);
+
+	useEffect(() => {
+		setTimeout(() => {
+			document.getElementById('intro-text')?.classList.remove('d-none');
+			document.getElementById('intro-text')?.classList.add('d-flex');
+			document.getElementById('intro-text')?.classList.add('fade-in');
+		}, 3000);
 	}, []);
 
 	return (
@@ -24,7 +32,7 @@ const Landing = () => {
 					/>
 				</a>
 			</div>
-			<div id="text-intro" className="d-flex justify-content-center">
+			<div id="intro-text" className="d-none justify-content-center">
 				<p>Hey!</p>
 			</div>
 		</div>
