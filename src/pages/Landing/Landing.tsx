@@ -24,6 +24,9 @@ const Landing = () => {
 					/>
 				</a>
 			</div>
+			<div id="text-intro" className="d-flex justify-content-center">
+				<p>Hey!</p>
+			</div>
 		</div>
 	);
 };
