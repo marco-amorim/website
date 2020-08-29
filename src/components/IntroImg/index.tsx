@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 
 const IntroImg = () => {
 	useEffect(() => {
-		setTimeout(function () {
+		setTimeout(() => {
 			document.getElementById('intro-img')?.classList.remove('d-none');
 			document.getElementById('intro-img')?.classList.add('d-flex');
 			document.getElementById('intro-img')?.classList.add('fade-in');
