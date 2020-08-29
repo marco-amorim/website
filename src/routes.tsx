@@ -1,9 +1,9 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import Landing from './pages/Landing/Landing';
-import Portfolio from './pages/Portfolio/Portfolio';
-import Certificates from './pages/Certificates/Certificates';
-import Contact from './pages/Contact/Contact';
+import Landing from './pages/Landing';
+import Portfolio from './pages/Portfolio';
+import Certificates from './pages/Certificates';
+import Contact from './pages/Contact';
 
 const Routes = () => {
 	return (

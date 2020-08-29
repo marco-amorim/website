@@ -124,7 +124,11 @@ const Footer = () => {
 					</a>
 				</li>
 				<li className="navitem">
-					<a href="mailto:marcoamorim95@hotmail.com" rel="noopener noreferrer" target="_blank">
+					<a
+						href="mailto:marcoamorim95@hotmail.com"
+						rel="noopener noreferrer"
+						target="_blank"
+					>
 						<img
 							onMouseOver={(e) => hoverImg(e)}
 							onMouseOut={(e) => unHoverImg(e)}
