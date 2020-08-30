@@ -28,22 +28,34 @@ const IntroText = () => {
 			</div>
 			<div className="row justify-content-center">
 				<p id="intro-text-2" className="d-none text-center">
-					Nice to meet you, my name is Marco
+					Nice to meet you, my name is Marco{' '}
+					<span role="img" aria-label="Waving Hand">
+						👋
+					</span>
 				</p>
 			</div>
 			<div className="row justify-content-center">
 				<p id="intro-text-3" className="d-none text-center">
-					I'm a Full Stack Developer
+					I'm a Full Stack Developer{' '}
+					<span role="img" aria-label="Laptop">
+						💻
+					</span>
 				</p>
 			</div>
 			<div className="row justify-content-center">
 				<p id="intro-text-4" className="d-none text-center">
-					I'm passionate about changing peoples lives through technology
+					I'm passionate about changing peoples lives through technology{' '}
+					<span role="img" aria-label="Rocket">
+						🚀
+					</span>
 				</p>
 			</div>
 			<div className="row justify-content-center">
 				<p id="intro-text-5" className="d-none text-center">
-					Let's turn your ideas into reality :]
+					Let's turn your ideas into reality{' '}
+					<span role="img" aria-label="Nerd Face">
+						🤓
+					</span>
 				</p>
 			</div>
 		</div>
