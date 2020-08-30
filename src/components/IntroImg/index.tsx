@@ -6,7 +6,7 @@ const IntroImg = () => {
 			document.getElementById('intro-img')?.classList.remove('d-none');
 			document.getElementById('intro-img')?.classList.add('d-flex');
 			document.getElementById('intro-img')?.classList.add('fade-in');
-		}, 2700);
+		}, 2500);
 	}, []);
 
 	return (

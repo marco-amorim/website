@@ -36,6 +36,10 @@
 		margin-top: 5rem;
 		margin-bottom: 5rem;
 	}
+
+	#intro-text {
+		font-size: 1.4rem;
+	}
 }
 
 /* Desktop */
@@ -46,7 +50,7 @@
 	}
 
 	.intro {
-		margin-top: 10rem;
-		margin-bottom: 10rem;
+		margin-top: 7.5rem;
+		margin-bottom: 7.5rem;
 	}
 }
