@@ -9,13 +9,13 @@ const IntroText = () => {
 	}, []);
 
 	useEffect(() => {
-		var timeout = 3000;
+		var timeout = 3500;
 		document.querySelectorAll('*[id^="intro-text-"]').forEach((element) => {
 			setTimeout(() => {
 				element?.classList.remove('d-none');
 				element?.classList.add('fade-in');
 			}, timeout);
-			timeout += 750;
+			timeout += 1000;
 		});
 	});
 
@@ -33,7 +33,7 @@ const IntroText = () => {
 			</div>
 			<div className="row justify-content-center">
 				<p id="intro-text-3" className="d-none text-center">
-					I'm a Full Stack Developer
+					I'm a Software Engineer
 				</p>
 			</div>
 			<div className="row justify-content-center">

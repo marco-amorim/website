@@ -23,7 +23,7 @@ const Landing = () => {
 		setTimeout(() => {
 			document.getElementById('arrow-container')?.classList.remove('d-none');
 			document.getElementById('arrow-down')?.classList.add('fade-in');
-		}, 7000);
+		}, 9000);
 	}, []);
 
 	return (
