@@ -1,11 +1,10 @@
 .page-footer {
-	position: absolute;
-	bottom: 0;
+	/* position: absolute;
+	bottom: 0; */
 	width: 100vw;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-top: auto;
 }
 
 .page-footer li:not(:last-child) {
@@ -30,6 +29,7 @@
 
 	.page-footer {
 		margin-bottom: 1rem;
+		margin-top: 20rem;
 	}
 }
 
@@ -37,6 +37,7 @@
 @media (max-width: 480px) {
 	.page-footer {
 		flex-direction: column-reverse;
+		margin-top: 10rem;
 	}
 
 	.copyright {

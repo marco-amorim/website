@@ -10,7 +10,7 @@ const IntroImg = () => {
 	}, []);
 
 	return (
-		<div id="intro-img" className="justify-content-center intro d-none">
+		<div id="intro-img" className="intro-img-container justify-content-center d-none">
 			<a href="/">
 				<img
 					className="intro-img"

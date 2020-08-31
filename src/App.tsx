@@ -8,7 +8,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 const App = () => {
 	return (
-		<div>
+		<div id="app" className="app-content">
 			<BrowserRouter>
 				<Header />
 				<Routes />
