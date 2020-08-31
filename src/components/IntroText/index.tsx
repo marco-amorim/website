@@ -31,7 +31,7 @@ const IntroText = () => {
 			</div>
 			<div className="row justify-content-center">
 				<p id="intro-text-3" className="d-none text-center">
-					I'm a Software Engineer
+					I'm a Software Developer
 				</p>
 			</div>
 			<div className="row justify-content-center">
