@@ -89,14 +89,20 @@
 	}
 }
 
-@media (max-height: 900px) {
+@media (max-height: 600px) {
 	.arrow {
 		margin-top: 10rem;
 	}
 }
 
-@media (min-height: 900px) {
+@media (min-height: 600px) {
 	.arrow {
-		margin-top: 25rem;
+		margin-top: 15rem;
+	}
+}
+
+@media (min-height: 800px) {
+	.arrow {
+		margin-top: 30rem;
 	}
 }
