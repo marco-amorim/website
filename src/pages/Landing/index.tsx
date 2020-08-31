@@ -21,10 +21,8 @@ const Landing = () => {
 
 	useEffect(() => {
 		setTimeout(() => {
-			document
-				.getElementById('arrow-down-container')
-				?.classList.remove('d-none');
-			document.getElementById('arrow-down-container')?.classList.add('fade-in');
+			document.getElementById('arrow-container')?.classList.remove('d-none');
+			document.getElementById('arrow-down')?.classList.add('fade-in');
 		}, 7000);
 	}, []);
 
@@ -35,10 +33,10 @@ const Landing = () => {
 				<IntroImg />
 				<IntroText />
 
-				<div id="arrow-down-container" className="arrow bounce d-none">
+				<div id="arrow-container" className="arrow bounce d-none">
 					<a
 						id="arrow-down"
-						className={scrollPosition === 0 ? '' : 'd-none'}
+						className={scrollPosition === 0 ? 'fade-in' : 'd-none'}
 						href="#info"
 					>
 						<img
