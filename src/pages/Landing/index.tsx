@@ -9,7 +9,7 @@ import Title from '../../components/Title';
 import arrowDownIcon from '../../assets/images/icons/util/arrow-down.svg';
 
 import gitIcon from '../../assets/images/icons/technologies/git.svg';
-import gitIconHover from '../../assets/images/icons/technologies/git.svg';
+import gitIconHover from '../../assets/images/icons/technologies/git-hover.svg';
 
 import javaIcon from '../../assets/images/icons/technologies/java.svg';
 import javaIconHover from '../../assets/images/icons/technologies/java-hover.svg';
@@ -41,6 +41,54 @@ const Landing = () => {
 		}, 9000);
 	}, []);
 
+	function hoverImg(e: any) {
+		const src = e.target.src;
+
+		if (src.includes('git')) {
+			e.target.src = gitIconHover;
+		}
+
+		if (src.includes('java')) {
+			e.target.src = javaIconHover;
+		}
+
+		if (src.includes('nodejs')) {
+			e.target.src = nodeIconHover;
+		}
+
+		if (src.includes('react')) {
+			e.target.src = reactIconHover;
+		}
+
+		if (src.includes('redux')) {
+			e.target.src = reduxIconHover;
+		}
+	}
+
+	function unHoverImg(e: any) {
+		const src = e.target.src;
+
+		if (src.includes('git')) {
+			e.target.src = gitIcon;
+		}
+
+		if (src.includes('java')) {
+			e.target.src = javaIcon;
+		}
+
+		if (src.includes('nodejs')) {
+			e.target.src = nodeIcon;
+		}
+
+		if (src.includes('react')) {
+			e.target.src = reactIcon;
+		}
+
+		if (src.includes('redux')) {
+			e.target.src = reduxIcon;
+		}
+	}
+
 	return (
 		<React.Fragment>
 			<section id="intro" className="container">
@@ -63,10 +111,7 @@ const Landing = () => {
 				</div>
 			</section>
 
-			<section
-				id="info"
-				className="container"
-			>
+			<section id="info" className="container">
 				<Title text="Some technologies I work with" />
 
 				<ul
@@ -74,28 +119,73 @@ const Landing = () => {
 					className="d-flex list-unstyled flex-row justify-content-center align-items-center mt-5"
 				>
 					<li>
-						<a href="">
-							<img src={gitIcon} alt="Git" />
+						<a
+							href="https://git-scm.com/"
+							rel="noopener noreferrer"
+							target="_blank"
+						>
+							<img
+								onMouseOver={(e) => hoverImg(e)}
+								onMouseOut={(e) => unHoverImg(e)}
+								src={gitIcon}
+								alt="Git"
+							/>
 						</a>
 					</li>
 					<li>
-						<a href="">
-							<img src={javaIcon} alt="Java" />
+						<a
+							href="https://www.java.com/"
+							rel="noopener noreferrer"
+							target="_blank"
+						>
+							<img
+								onMouseOver={(e) => hoverImg(e)}
+								onMouseOut={(e) => unHoverImg(e)}
+								src={javaIcon}
+								alt="Java"
+							/>
 						</a>
 					</li>
 					<li>
-						<a href="">
-							<img src={nodeIcon} alt="Node.js" />
+						<a
+							href="https://nodejs.org/"
+							rel="noopener noreferrer"
+							target="_blank"
+						>
+							<img
+								onMouseOver={(e) => hoverImg(e)}
+								onMouseOut={(e) => unHoverImg(e)}
+								src={nodeIcon}
+								alt="Node.js"
+							/>
 						</a>
 					</li>
 					<li>
-						<a href="">
-							<img src={reactIcon} alt="React.js" />
+						<a
+							href="https://reactjs.org/"
+							rel="noopener noreferrer"
+							target="_blank"
+						>
+							<img
+								onMouseOver={(e) => hoverImg(e)}
+								onMouseOut={(e) => unHoverImg(e)}
+								src={reactIcon}
+								alt="React.js"
+							/>
 						</a>
 					</li>
 					<li>
-						<a href="">
-							<img src={reduxIcon} alt="Redux.js" />
+						<a
+							href="https://redux.js.org/"
+							rel="noopener noreferrer"
+							target="_blank"
+						>
+							<img
+								onMouseOver={(e) => hoverImg(e)}
+								onMouseOut={(e) => unHoverImg(e)}
+								src={reduxIcon}
+								alt="Redux.js"
+							/>
 						</a>
 					</li>
 				</ul>
