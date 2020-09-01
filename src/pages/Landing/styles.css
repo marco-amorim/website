@@ -59,6 +59,15 @@
 	}
 }
 
+#technologies img {
+	width: 36px;
+	height: 36px;
+}
+
+#technologies li:not(:last-child) {
+	margin-right: 2rem;
+}
+
 /* Mobile */
 @media (max-width: 480px) {
 	.intro-img {

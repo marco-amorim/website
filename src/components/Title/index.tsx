@@ -7,7 +7,11 @@ interface TitleProps {
 }
 
 const Title: React.FC<TitleProps> = ({ text }) => {
-	return <h2 className="title">{text}</h2>;
+	return (
+		<div className="row d-flex justify-content-center">
+			<h2 className="title">{text}</h2>
+		</div>
+	);
 };
 
 export default Title;
