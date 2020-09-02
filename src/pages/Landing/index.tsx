@@ -6,8 +6,14 @@ import AnimatedLogo from '../../components/AnimatedLogo';
 import IntroImg from '../../components/IntroImg';
 import IntroText from '../../components/IntroText';
 import Title from '../../components/Title';
-
+import gitIcon from '../../assets/images/icons/technologies/git.svg';
+import javaIcon from '../../assets/images/icons/technologies/java.svg';
+import nodejsIcon from '../../assets/images/icons/technologies/nodejs.svg';
+import reactIcon from '../../assets/images/icons/technologies/react.svg';
+import reduxIcon from '../../assets/images/icons/technologies/redux.svg';
 import arrowDownIcon from '../../assets/images/icons/util/arrow-down.svg';
+
+import { hoverImg, unHoverImg } from '../../utils/iconsHoverHandler';
 
 const Landing = () => {
 	const [scrollPosition, setScrollPosition] = useState(window.scrollY);
@@ -62,7 +68,15 @@ const Landing = () => {
 							href="https://git-scm.com/"
 							rel="noopener noreferrer"
 							target="_blank"
-						></a>
+						>
+							<img
+								onMouseOver={(e) => hoverImg(e)}
+								onMouseOut={(e) => unHoverImg(e)}
+								src={gitIcon}
+								alt="Git"
+								title="Git"
+							/>
+						</a>
 					</li>
 					<li>
 						<a
@@ -70,7 +84,15 @@ const Landing = () => {
 							href="https://www.java.com/"
 							rel="noopener noreferrer"
 							target="_blank"
-						></a>
+						>
+							<img
+								onMouseOver={(e) => hoverImg(e)}
+								onMouseOut={(e) => unHoverImg(e)}
+								src={javaIcon}
+								alt="Java"
+								title="Java"
+							/>
+						</a>
 					</li>
 					<li>
 						<a
@@ -78,7 +100,15 @@ const Landing = () => {
 							href="https://nodejs.org/"
 							rel="noopener noreferrer"
 							target="_blank"
-						></a>
+						>
+							<img
+								onMouseOver={(e) => hoverImg(e)}
+								onMouseOut={(e) => unHoverImg(e)}
+								src={nodejsIcon}
+								alt="Node.js"
+								title="Node.js"
+							/>
+						</a>
 					</li>
 					<li>
 						<a
@@ -86,7 +116,15 @@ const Landing = () => {
 							href="https://reactjs.org/"
 							rel="noopener noreferrer"
 							target="_blank"
-						></a>
+						>
+							<img
+								onMouseOver={(e) => hoverImg(e)}
+								onMouseOut={(e) => unHoverImg(e)}
+								src={reactIcon}
+								alt="React.js"
+								title="React.js"
+							/>
+						</a>
 					</li>
 					<li>
 						<a
@@ -94,7 +132,15 @@ const Landing = () => {
 							href="https://redux.js.org/"
 							rel="noopener noreferrer"
 							target="_blank"
-						></a>
+						>
+							<img
+								onMouseOver={(e) => hoverImg(e)}
+								onMouseOut={(e) => unHoverImg(e)}
+								src={reduxIcon}
+								alt="Redux.js"
+								title="Redux.js"
+							/>
+						</a>
 					</li>
 				</ul>
 			</section>
