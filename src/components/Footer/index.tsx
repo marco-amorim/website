@@ -15,6 +15,7 @@ import stackoverflowIconHover from '../../assets/images/icons/social-media/stack
 import emailIconHover from '../../assets/images/icons/social-media/email-hover.svg';
 
 const Footer = () => {
+	//TODO: remove this logic
 	function hoverImg(e: any) {
 		const src = e.target.src;
 
