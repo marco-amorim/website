@@ -2,10 +2,12 @@
 import React, { useEffect, useState } from 'react';
 
 import './styles.css';
+
 import AnimatedLogo from '../../components/AnimatedLogo';
 import IntroImg from '../../components/IntroImg';
 import IntroText from '../../components/IntroText';
 import Title from '../../components/Title';
+
 import gitIcon from '../../assets/images/icons/technologies/git.svg';
 import javaIcon from '../../assets/images/icons/technologies/java.svg';
 import nodejsIcon from '../../assets/images/icons/technologies/nodejs.svg';
@@ -13,7 +15,11 @@ import reactIcon from '../../assets/images/icons/technologies/react.svg';
 import reduxIcon from '../../assets/images/icons/technologies/redux.svg';
 import arrowDownIcon from '../../assets/images/icons/util/arrow-down.svg';
 
-import { hoverImg, unHoverImg } from '../../utils/iconsHoverHandler';
+import gitIconHover from '../../assets/images/icons/technologies/git-hover.svg';
+import javaIconHover from '../../assets/images/icons/technologies/java-hover.svg';
+import nodejsIconHover from '../../assets/images/icons/technologies/nodejs-hover.svg';
+import reactIconHover from '../../assets/images/icons/technologies/react-hover.svg';
+import reduxIconHover from '../../assets/images/icons/technologies/redux-hover.svg';
 
 const Landing = () => {
 	const [scrollPosition, setScrollPosition] = useState(window.scrollY);
@@ -70,8 +76,8 @@ const Landing = () => {
 							target="_blank"
 						>
 							<img
-								onMouseOver={(e) => hoverImg(e)}
-								onMouseOut={(e) => unHoverImg(e)}
+								onMouseOver={(e) => (e.currentTarget.src = gitIconHover)}
+								onMouseOut={(e) => (e.currentTarget.src = gitIcon)}
 								src={gitIcon}
 								alt="Git"
 								title="Git"
@@ -86,8 +92,8 @@ const Landing = () => {
 							target="_blank"
 						>
 							<img
-								onMouseOver={(e) => hoverImg(e)}
-								onMouseOut={(e) => unHoverImg(e)}
+								onMouseOver={(e) => (e.currentTarget.src = javaIconHover)}
+								onMouseOut={(e) => (e.currentTarget.src = javaIcon)}
 								src={javaIcon}
 								alt="Java"
 								title="Java"
@@ -102,8 +108,8 @@ const Landing = () => {
 							target="_blank"
 						>
 							<img
-								onMouseOver={(e) => hoverImg(e)}
-								onMouseOut={(e) => unHoverImg(e)}
+								onMouseOver={(e) => (e.currentTarget.src = nodejsIconHover)}
+								onMouseOut={(e) => (e.currentTarget.src = nodejsIcon)}
 								src={nodejsIcon}
 								alt="Node.js"
 								title="Node.js"
@@ -118,8 +124,8 @@ const Landing = () => {
 							target="_blank"
 						>
 							<img
-								onMouseOver={(e) => hoverImg(e)}
-								onMouseOut={(e) => unHoverImg(e)}
+								onMouseOver={(e) => (e.currentTarget.src = reactIconHover)}
+								onMouseOut={(e) => (e.currentTarget.src = reactIcon)}
 								src={reactIcon}
 								alt="React.js"
 								title="React.js"
@@ -134,8 +140,8 @@ const Landing = () => {
 							target="_blank"
 						>
 							<img
-								onMouseOver={(e) => hoverImg(e)}
-								onMouseOut={(e) => unHoverImg(e)}
+								onMouseOver={(e) => (e.currentTarget.src = reduxIconHover)}
+								onMouseOut={(e) => (e.currentTarget.src = reduxIcon)}
 								src={reduxIcon}
 								alt="Redux.js"
 								title="Redux.js"

@@ -8,7 +8,11 @@ import linkedinIcon from '../../assets/images/icons/social-media/linkedin.svg';
 import stackoverflowIcon from '../../assets/images/icons/social-media/stackoverflow.svg';
 import emailIcon from '../../assets/images/icons/social-media/email.svg';
 
-import { hoverImg, unHoverImg } from '../../utils/iconsHoverHandler';
+import githubIconHover from '../../assets/images/icons/social-media/github-hover.svg';
+import codewarsIconHover from '../../assets/images/icons/social-media/codewars-hover.svg';
+import linkedinIconHover from '../../assets/images/icons/social-media/linkedin-hover.svg';
+import stackoverflowIconHover from '../../assets/images/icons/social-media/stackoverflow-hover.svg';
+import emailIconHover from '../../assets/images/icons/social-media/email-hover.svg';
 
 const Footer = () => {
 	return (
@@ -22,8 +26,8 @@ const Footer = () => {
 						target="_blank"
 					>
 						<img
-							onMouseOver={(e) => hoverImg(e)}
-							onMouseOut={(e) => unHoverImg(e)}
+							onMouseOver={(e) => (e.currentTarget.src = githubIconHover)}
+							onMouseOut={(e) => (e.currentTarget.src = githubIcon)}
 							src={githubIcon}
 							alt="Github"
 						/>
@@ -36,8 +40,8 @@ const Footer = () => {
 						target="_blank"
 					>
 						<img
-							onMouseOver={(e) => hoverImg(e)}
-							onMouseOut={(e) => unHoverImg(e)}
+							onMouseOver={(e) => (e.currentTarget.src = linkedinIconHover)}
+							onMouseOut={(e) => (e.currentTarget.src = linkedinIcon)}
 							src={linkedinIcon}
 							alt="LinkedIn"
 						/>
@@ -50,8 +54,8 @@ const Footer = () => {
 						target="_blank"
 					>
 						<img
-							onMouseOver={(e) => hoverImg(e)}
-							onMouseOut={(e) => unHoverImg(e)}
+							onMouseOver={(e) => (e.currentTarget.src = codewarsIconHover)}
+							onMouseOut={(e) => (e.currentTarget.src = codewarsIcon)}
 							src={codewarsIcon}
 							alt="Codewars"
 						/>
@@ -64,8 +68,10 @@ const Footer = () => {
 						target="_blank"
 					>
 						<img
-							onMouseOver={(e) => hoverImg(e)}
-							onMouseOut={(e) => unHoverImg(e)}
+							onMouseOver={(e) =>
+								(e.currentTarget.src = stackoverflowIconHover)
+							}
+							onMouseOut={(e) => (e.currentTarget.src = stackoverflowIcon)}
 							src={stackoverflowIcon}
 							alt="StackOverflow"
 						/>
@@ -78,8 +84,8 @@ const Footer = () => {
 						target="_blank"
 					>
 						<img
-							onMouseOver={(e) => hoverImg(e)}
-							onMouseOut={(e) => unHoverImg(e)}
+							onMouseOver={(e) => (e.currentTarget.src = emailIconHover)}
+							onMouseOut={(e) => (e.currentTarget.src = emailIcon)}
 							src={emailIcon}
 							alt="E-mail"
 						/>
