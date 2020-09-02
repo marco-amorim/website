@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
 import React, { useEffect, useState } from 'react';
 
 import './styles.css';
@@ -7,21 +8,6 @@ import IntroText from '../../components/IntroText';
 import Title from '../../components/Title';
 
 import arrowDownIcon from '../../assets/images/icons/util/arrow-down.svg';
-
-import gitIcon from '../../assets/images/icons/technologies/git.svg';
-import gitIconHover from '../../assets/images/icons/technologies/git-hover.svg';
-
-import javaIcon from '../../assets/images/icons/technologies/java.svg';
-import javaIconHover from '../../assets/images/icons/technologies/java-hover.svg';
-
-import nodeIcon from '../../assets/images/icons/technologies/nodejs.svg';
-import nodeIconHover from '../../assets/images/icons/technologies/nodejs-hover.svg';
-
-import reactIcon from '../../assets/images/icons/technologies/react.svg';
-import reactIconHover from '../../assets/images/icons/technologies/react-hover.svg';
-
-import reduxIcon from '../../assets/images/icons/technologies/redux.svg';
-import reduxIconHover from '../../assets/images/icons/technologies/redux-hover.svg';
 
 const Landing = () => {
 	const [scrollPosition, setScrollPosition] = useState(window.scrollY);
@@ -40,54 +26,6 @@ const Landing = () => {
 			document.getElementById('arrow-down')?.classList.add('fade-in');
 		}, 9000);
 	}, []);
-
-	function hoverImg(e: any) {
-		const src = e.target.src;
-
-		if (src.includes('git')) {
-			e.target.src = gitIconHover;
-		}
-
-		if (src.includes('java')) {
-			e.target.src = javaIconHover;
-		}
-
-		if (src.includes('nodejs')) {
-			e.target.src = nodeIconHover;
-		}
-
-		if (src.includes('react')) {
-			e.target.src = reactIconHover;
-		}
-
-		if (src.includes('redux')) {
-			e.target.src = reduxIconHover;
-		}
-	}
-
-	function unHoverImg(e: any) {
-		const src = e.target.src;
-
-		if (src.includes('git')) {
-			e.target.src = gitIcon;
-		}
-
-		if (src.includes('java')) {
-			e.target.src = javaIcon;
-		}
-
-		if (src.includes('nodejs')) {
-			e.target.src = nodeIcon;
-		}
-
-		if (src.includes('react')) {
-			e.target.src = reactIcon;
-		}
-
-		if (src.includes('redux')) {
-			e.target.src = reduxIcon;
-		}
-	}
 
 	return (
 		<React.Fragment>
@@ -120,73 +58,43 @@ const Landing = () => {
 				>
 					<li>
 						<a
+							id="git"
 							href="https://git-scm.com/"
 							rel="noopener noreferrer"
 							target="_blank"
-						>
-							<img
-								onMouseOver={(e) => hoverImg(e)}
-								onMouseOut={(e) => unHoverImg(e)}
-								src={gitIcon}
-								alt="Git"
-							/>
-						</a>
+						></a>
 					</li>
 					<li>
 						<a
+							id="java"
 							href="https://www.java.com/"
 							rel="noopener noreferrer"
 							target="_blank"
-						>
-							<img
-								onMouseOver={(e) => hoverImg(e)}
-								onMouseOut={(e) => unHoverImg(e)}
-								src={javaIcon}
-								alt="Java"
-							/>
-						</a>
+						></a>
 					</li>
 					<li>
 						<a
+							id="node"
 							href="https://nodejs.org/"
 							rel="noopener noreferrer"
 							target="_blank"
-						>
-							<img
-								onMouseOver={(e) => hoverImg(e)}
-								onMouseOut={(e) => unHoverImg(e)}
-								src={nodeIcon}
-								alt="Node.js"
-							/>
-						</a>
+						></a>
 					</li>
 					<li>
 						<a
+							id="react"
 							href="https://reactjs.org/"
 							rel="noopener noreferrer"
 							target="_blank"
-						>
-							<img
-								onMouseOver={(e) => hoverImg(e)}
-								onMouseOut={(e) => unHoverImg(e)}
-								src={reactIcon}
-								alt="React.js"
-							/>
-						</a>
+						></a>
 					</li>
 					<li>
 						<a
+							id="redux"
 							href="https://redux.js.org/"
 							rel="noopener noreferrer"
 							target="_blank"
-						>
-							<img
-								onMouseOver={(e) => hoverImg(e)}
-								onMouseOut={(e) => unHoverImg(e)}
-								src={reduxIcon}
-								alt="Redux.js"
-							/>
-						</a>
+						></a>
 					</li>
 				</ul>
 			</section>

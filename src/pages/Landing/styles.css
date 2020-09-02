@@ -59,13 +59,54 @@
 	}
 }
 
-#technologies img {
+#technologies a {
+	display: block;
 	width: 36px;
 	height: 36px;
 }
 
 #technologies li:not(:last-child) {
 	margin-right: 2rem;
+}
+
+#git {
+	background-image: url('../../assets//images/icons/technologies/git.svg');
+}
+
+#git:hover {
+	background-image: url('../../assets//images/icons/technologies/git-hover.svg');
+}
+
+#java {
+	background-image: url('../../assets//images/icons/technologies/java.svg');
+}
+
+#java:hover {
+	background-image: url('../../assets//images/icons/technologies/java-hover.svg');
+}
+
+#node {
+	background-image: url('../../assets//images/icons/technologies/nodejs.svg');
+}
+
+#node:hover {
+	background-image: url('../../assets//images/icons/technologies/nodejs-hover.svg');
+}
+
+#react {
+	background-image: url('../../assets//images/icons/technologies/react.svg');
+}
+
+#react:hover {
+	background-image: url('../../assets//images/icons/technologies/react-hover.svg');
+}
+
+#redux {
+	background-image: url('../../assets//images/icons/technologies/redux.svg');
+}
+
+#redux:hover {
+	background-image: url('../../assets//images/icons/technologies/redux-hover.svg');
 }
 
 /* Mobile */
