@@ -160,17 +160,19 @@
 	position: absolute;
 	top: 50px;
 	background-color: #26262c;
-	height: 25vh;
+	height: 15vh;
 	width: 100vw;
 	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-top: 2px solid #9147ff;
 }
 
 .mobile-menu {
 	display: flex;
 	flex-direction: column;
-	padding-top: 2rem;
-	margin-top: 2rem !important;
-	border-top: 2px solid #9147ff;
+	width: 100vw;
 }
 
 .slide-in-fwd-left {

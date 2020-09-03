@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
 
+import './styles.css';
+
 const IntroText = () => {
 	useEffect(() => {
 		setTimeout(() => {

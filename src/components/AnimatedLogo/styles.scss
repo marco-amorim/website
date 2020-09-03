@@ -4,8 +4,8 @@ $purple: #9147ff;
 	border: 0;
 	box-sizing: border-box;
 	margin: 0;
-	height: 15rem;
-	width: 15rem;
+	height: 12rem;
+	width: 12rem;
 	padding: 7rem;
 	display: flex;
 	justify-content: left;
@@ -53,41 +53,34 @@ $purple: #9147ff;
 	}
 }
 
-.slide-out-elliptic-top-bck {
-	-webkit-animation: slide-out-elliptic-top-bck 0.7s ease-in both;
-	animation: slide-out-elliptic-top-bck 0.7s ease-in both;
+.flip-out-hor-top {
+	-webkit-animation: flip-out-hor-top 0.45s
+		cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+	animation: flip-out-hor-top 0.45s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
-@-webkit-keyframes slide-out-elliptic-top-bck {
+@-webkit-keyframes flip-out-hor-top {
 	0% {
-		-webkit-transform: translateY(0) rotateX(0) scale(1);
-		transform: translateY(0) rotateX(0) scale(1);
-		-webkit-transform-origin: 50% 1400px;
-		transform-origin: 50% 1400px;
+		-webkit-transform: rotateX(0);
+		transform: rotateX(0);
 		opacity: 1;
 	}
 	100% {
-		-webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
-		transform: translateY(-600px) rotateX(-30deg) scale(0);
-		-webkit-transform-origin: 50% 100%;
-		transform-origin: 50% 100%;
-		opacity: 1;
+		-webkit-transform: rotateX(70deg);
+		transform: rotateX(70deg);
+		opacity: 0;
 	}
 }
-@keyframes slide-out-elliptic-top-bck {
+@keyframes flip-out-hor-top {
 	0% {
-		-webkit-transform: translateY(0) rotateX(0) scale(1);
-		transform: translateY(0) rotateX(0) scale(1);
-		-webkit-transform-origin: 50% 1400px;
-		transform-origin: 50% 1400px;
+		-webkit-transform: rotateX(0);
+		transform: rotateX(0);
 		opacity: 1;
 	}
 	100% {
-		-webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
-		transform: translateY(-600px) rotateX(-30deg) scale(0);
-		-webkit-transform-origin: 50% 100%;
-		transform-origin: 50% 100%;
-		opacity: 1;
+		-webkit-transform: rotateX(70deg);
+		transform: rotateX(70deg);
+		opacity: 0;
 	}
 }
 
@@ -105,13 +98,13 @@ $purple: #9147ff;
 	}
 }
 
-@media (max-height: 800px) {
+@media (max-height: 900px) {
 	.logo-home {
 		margin-top: 5rem;
 	}
 }
 
-@media (min-height: 801px) {
+@media (min-height: 901px) {
 	.logo-home {
 		margin-top: 7.5rem;
 	}
