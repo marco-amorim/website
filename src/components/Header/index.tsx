@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
 import './styles.css';
-import { Link } from 'react-router-dom';
 
 const Header = () => {
 	const [selectedDesktop, setSelectedDesktop] = useState(
