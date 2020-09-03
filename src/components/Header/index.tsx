@@ -94,19 +94,19 @@ const Header = () => {
 
 				<ul className="navbar list-unstyled">
 					<li className="nav-item">
-						<Link className="nav-link desktop-link" to="/">
+						<a className="nav-link desktop-link" href="/">
 							Home
-						</Link>
+						</a>
 					</li>
 					<li className="nav-item">
-						<Link className="nav-link desktop-link" to="/portfolio">
+						<a className="nav-link desktop-link" href="/portfolio">
 							Portfolio
-						</Link>
+						</a>
 					</li>
 					<li className="nav-item">
-						<Link className="nav-link desktop-link" to="/certificates">
+						<a className="nav-link desktop-link" href="/certificates">
 							Certificates
-						</Link>
+						</a>
 					</li>
 				</ul>
 			</nav>
@@ -139,19 +139,19 @@ const Header = () => {
 				>
 					<ul className="navbar list-unstyled mobile-menu">
 						<li className="nav-item">
-							<Link className="nav-link mobile-link" to="/">
+							<a className="nav-link mobile-link" href="/">
 								Home
-							</Link>
+							</a>
 						</li>
 						<li className="nav-item">
-							<Link className="nav-link mobile-link" to="/portfolio">
+							<a className="nav-link mobile-link" href="/portfolio">
 								Portfolio
-							</Link>
+							</a>
 						</li>
 						<li className="nav-item">
-							<Link className="nav-link mobile-link" to="/certificates">
+							<a className="nav-link mobile-link" href="/certificates">
 								Certificates
-							</Link>
+							</a>
 						</li>
 					</ul>
 				</div>
