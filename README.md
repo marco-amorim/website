@@ -6,18 +6,16 @@
 
 - Home
   - Greetings
-  - Some Technologies I work with
-  - Soft skills
+  - Technologies
   - Experience
   - Education
+  - Contact
 - Portfolio
-  - Github projects
+  - Personal Projects
+  - Work Projects
 - Certificates
-  - Course certifications
+  - Courses
   - Participations
-- Contact
-  - Email sender
-  - Social medias
 
 ### Footer
 
