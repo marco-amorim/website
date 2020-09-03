@@ -30,6 +30,7 @@ const Footer = () => {
 							onMouseOut={(e) => (e.currentTarget.src = githubIcon)}
 							src={githubIcon}
 							alt="Github"
+							title="Github"
 						/>
 					</a>
 				</li>
@@ -44,6 +45,7 @@ const Footer = () => {
 							onMouseOut={(e) => (e.currentTarget.src = linkedinIcon)}
 							src={linkedinIcon}
 							alt="LinkedIn"
+							title="LinkedIn"
 						/>
 					</a>
 				</li>
@@ -58,6 +60,7 @@ const Footer = () => {
 							onMouseOut={(e) => (e.currentTarget.src = codewarsIcon)}
 							src={codewarsIcon}
 							alt="Codewars"
+							title="Codewars"
 						/>
 					</a>
 				</li>
@@ -74,6 +77,7 @@ const Footer = () => {
 							onMouseOut={(e) => (e.currentTarget.src = stackoverflowIcon)}
 							src={stackoverflowIcon}
 							alt="StackOverflow"
+							title="StackOverflow"
 						/>
 					</a>
 				</li>
@@ -88,6 +92,7 @@ const Footer = () => {
 							onMouseOut={(e) => (e.currentTarget.src = emailIcon)}
 							src={emailIcon}
 							alt="E-mail"
+							title="E-mail"
 						/>
 					</a>
 				</li>
