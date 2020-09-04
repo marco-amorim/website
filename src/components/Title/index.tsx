@@ -8,7 +8,7 @@ interface TitleProps {
 
 const Title: React.FC<TitleProps> = ({ text }) => {
 	return (
-		<div className="row d-flex justify-content-center">
+		<div className="row d-flex justify-content-center mb-5">
 			<h2 className="title">{text}</h2>
 		</div>
 	);

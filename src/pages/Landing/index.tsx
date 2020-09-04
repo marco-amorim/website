@@ -62,93 +62,150 @@ const Landing = () => {
 			</section>
 
 			<section id="info" className="container">
-				<Title text="Some technologies I work with" />
+				<div className="info-item">
+					<Title text="Some technologies I work with" />
 
-				<ul
-					id="technologies"
-					className="d-flex list-unstyled flex-row justify-content-center align-items-center mt-5"
-				>
-					<li>
+					<ul
+						id="technologies"
+						className="d-flex list-unstyled flex-row justify-content-center align-items-center"
+					>
+						<li>
+							<a
+								id="git"
+								href="https://git-scm.com/"
+								rel="noopener noreferrer"
+								target="_blank"
+							>
+								<img
+									onMouseOver={(e) => (e.currentTarget.src = gitIconHover)}
+									onMouseOut={(e) => (e.currentTarget.src = gitIcon)}
+									src={gitIcon}
+									alt="Git"
+									title="Git"
+								/>
+							</a>
+						</li>
+						<li>
+							<a
+								id="java"
+								href="https://www.java.com/"
+								rel="noopener noreferrer"
+								target="_blank"
+							>
+								<img
+									onMouseOver={(e) => (e.currentTarget.src = javaIconHover)}
+									onMouseOut={(e) => (e.currentTarget.src = javaIcon)}
+									src={javaIcon}
+									alt="Java"
+									title="Java"
+								/>
+							</a>
+						</li>
+						<li>
+							<a
+								id="node"
+								href="https://nodejs.org/"
+								rel="noopener noreferrer"
+								target="_blank"
+							>
+								<img
+									onMouseOver={(e) => (e.currentTarget.src = nodejsIconHover)}
+									onMouseOut={(e) => (e.currentTarget.src = nodejsIcon)}
+									src={nodejsIcon}
+									alt="Node.js"
+									title="Node.js"
+								/>
+							</a>
+						</li>
+						<li>
+							<a
+								id="react"
+								href="https://reactjs.org/"
+								rel="noopener noreferrer"
+								target="_blank"
+							>
+								<img
+									onMouseOver={(e) => (e.currentTarget.src = reactIconHover)}
+									onMouseOut={(e) => (e.currentTarget.src = reactIcon)}
+									src={reactIcon}
+									alt="React.js"
+									title="React.js"
+								/>
+							</a>
+						</li>
+						<li>
+							<a
+								id="redux"
+								href="https://redux.js.org/"
+								rel="noopener noreferrer"
+								target="_blank"
+							>
+								<img
+									onMouseOver={(e) => (e.currentTarget.src = reduxIconHover)}
+									onMouseOut={(e) => (e.currentTarget.src = reduxIcon)}
+									src={reduxIcon}
+									alt="Redux.js"
+									title="Redux.js"
+								/>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<div className="info-item">
+					<Title text="Experience" />
+					<h5>October 2019 - Present</h5>
+
+					<div className="job-title">
+						Software Developer at{' '}
 						<a
-							id="git"
-							href="https://git-scm.com/"
+							href="https://www.linkedin.com/company/unimeddobrasil"
+							className="info-link"
 							rel="noopener noreferrer"
 							target="_blank"
 						>
-							<img
-								onMouseOver={(e) => (e.currentTarget.src = gitIconHover)}
-								onMouseOut={(e) => (e.currentTarget.src = gitIcon)}
-								src={gitIcon}
-								alt="Git"
-								title="Git"
-							/>
+							Unimed do Brasil
 						</a>
-					</li>
-					<li>
+					</div>
+					<div className="job-info">
+						We have just finished developing a big application, a Singular
+						Website for several cooperatives around the country
+					</div>
+				</div>
+
+				<div className="info-item">
+					<Title text="Education" />
+					<div className="study-info">
+						Graduating in Information Systems at{' '}
 						<a
-							id="java"
-							href="https://www.java.com/"
+							href="http://unisul.br/"
+							className="info-link"
 							rel="noopener noreferrer"
 							target="_blank"
 						>
-							<img
-								onMouseOver={(e) => (e.currentTarget.src = javaIconHover)}
-								onMouseOut={(e) => (e.currentTarget.src = javaIcon)}
-								src={javaIcon}
-								alt="Java"
-								title="Java"
-							/>
+							Unisul
 						</a>
-					</li>
-					<li>
+						<br />
+						currently in the seventh semester
+					</div>
+				</div>
+
+				<div className="info-item">
+					<Title text="Contact" />
+					<div className="contact-info">
+						You can reach out to me on my{' '}
 						<a
-							id="node"
-							href="https://nodejs.org/"
+							href="mailto:marcoamorim95@hotmail.com"
 							rel="noopener noreferrer"
 							target="_blank"
+							className="info-link"
 						>
-							<img
-								onMouseOver={(e) => (e.currentTarget.src = nodejsIconHover)}
-								onMouseOut={(e) => (e.currentTarget.src = nodejsIcon)}
-								src={nodejsIcon}
-								alt="Node.js"
-								title="Node.js"
-							/>
-						</a>
-					</li>
-					<li>
-						<a
-							id="react"
-							href="https://reactjs.org/"
-							rel="noopener noreferrer"
-							target="_blank"
-						>
-							<img
-								onMouseOver={(e) => (e.currentTarget.src = reactIconHover)}
-								onMouseOut={(e) => (e.currentTarget.src = reactIcon)}
-								src={reactIcon}
-								alt="React.js"
-								title="React.js"
-							/>
-						</a>
-					</li>
-					<li>
-						<a
-							id="redux"
-							href="https://redux.js.org/"
-							rel="noopener noreferrer"
-							target="_blank"
-						>
-							<img
-								onMouseOver={(e) => (e.currentTarget.src = reduxIconHover)}
-								onMouseOut={(e) => (e.currentTarget.src = reduxIcon)}
-								src={reduxIcon}
-								alt="Redux.js"
-								title="Redux.js"
-							/>
-						</a>
-					</li>
-				</ul>
+							E-mail
+						</a>{' '}
+						or in any other social media <br />
+						I'm completely open to new opportunities and ideas, let's talk :)
+					</div>
+				</div>
 			</section>
 		</React.Fragment>
 	);

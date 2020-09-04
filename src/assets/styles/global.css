@@ -48,6 +48,7 @@ a:active {
 .container {
 	width: 90vw;
 	max-width: 700px;
+	padding: 0;
 }
 
 #app {

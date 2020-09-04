@@ -11,9 +11,27 @@
 	animation: bounce 2s infinite;
 }
 
+.info-item {
+	margin-bottom: 12rem;
+	text-align: center;
+}
+
 .arrow-down {
 	height: 36px;
 	width: 36px;
+}
+
+.job-title {
+	margin-bottom: 3rem;
+	font-size: 1.6rem;
+}
+
+.info-link {
+	color: #9147ff;
+}
+
+.info-link:hover {
+	border-bottom: 1px solid #9147ff;
 }
 
 @keyframes bounce {
@@ -74,5 +92,19 @@
 @media (min-height: 801px) {
 	.arrow {
 		margin-top: 25rem;
+	}
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+	.info-item {
+		font-size: 1.4rem;
+	}
+}
+
+/* Desktop */
+@media (min-width: 480px) {
+	.info-item {
+		font-size: 1.5rem;
 	}
 }
