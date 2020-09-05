@@ -8,7 +8,7 @@ const IntroImg = () => {
 		setTimeout(() => {
 			document.getElementById('intro-img')?.classList.remove('d-none');
 			document.getElementById('intro-img')?.classList.add('d-flex');
-			document.getElementById('intro-img')?.classList.add('flicker-in-1');
+			document.getElementById('intro-img')?.classList.add('scale-in-center');
 		}, 2500);
 	}, []);
 

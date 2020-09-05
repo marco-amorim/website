@@ -9,7 +9,7 @@ const AnimatedLogo = () => {
 		setTimeout(function () {
 			document
 				.getElementById('animated-logo')
-				?.classList.add('flicker-out-1');
+				?.classList.add('scale-out-center');
 		}, 1500);
 
 		setTimeout(function () {
