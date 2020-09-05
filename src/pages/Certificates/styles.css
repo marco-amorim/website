@@ -1,0 +1,34 @@
+#certificates {
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+#certificates li:not(:last-child) {
+	margin-bottom: 2rem;
+}
+
+#certificates a:hover {
+	border-bottom: 1px solid #9147ff;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+	#certificates {
+		margin-top: 5rem;
+	}
+
+	#certificates ul:not(:last-child) {
+		margin-bottom: 5rem;
+	}
+}
+
+/* Desktop */
+@media (min-width: 480px) {
+	#certificates {
+		margin-top: 7.5rem;
+	}
+
+	#certificates ul:not(:last-child) {
+		margin-bottom: 7.5rem;
+	}
+}
