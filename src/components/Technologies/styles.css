@@ -1,0 +1,18 @@
+.technologies a {
+	display: block;
+	width: 36px;
+	height: 36px;
+	transition: ease-in-out background-image 0.2s;
+}
+
+.technologies li:not(:last-child) {
+	margin-right: 2rem;
+}
+
+#technologies-container ul {
+  margin: 0;
+}
+
+#technologies-container ul:not(:last-child) {
+  margin-bottom: 2rem;
+}

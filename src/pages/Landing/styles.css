@@ -77,17 +77,6 @@
 	}
 }
 
-#technologies a {
-	display: block;
-	width: 36px;
-	height: 36px;
-	transition: ease-in-out background-image 0.2s;
-}
-
-#technologies li:not(:last-child) {
-	margin-right: 2rem;
-}
-
 .scroll-target {
 	display: block;
 	height: 50px;
