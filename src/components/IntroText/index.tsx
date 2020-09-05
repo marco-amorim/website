@@ -9,13 +9,13 @@ const IntroText = () => {
 			document.getElementById('intro-text')?.classList.add('d-flex');
 		}, 3000);
 
-		var timeout = 3500;
+		var timeout = 3250;
 		document.querySelectorAll('*[id^="intro-text-"]').forEach((element) => {
 			setTimeout(() => {
 				element?.classList.remove('d-none');
 				element?.classList.add('fade-in');
 			}, timeout);
-			timeout += 1000;
+			timeout += 750;
 		});
 	}, []);
 
