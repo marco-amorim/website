@@ -79,8 +79,8 @@
 
 .scroll-target {
 	display: block;
-	height: 50px;
-	margin-top: -50px;
+	height: 25px;
+	margin-top: -25px;
 	visibility: hidden;
 }
 
