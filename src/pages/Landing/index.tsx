@@ -50,7 +50,7 @@ const Landing = () => {
 					<a
 						id="arrow-down"
 						className={scrollPosition === 0 ? 'fade-in' : 'd-none'}
-						href="#info"
+						href="#scroll-info"
 					>
 						<img
 							src={arrowDownIcon}
@@ -61,6 +61,7 @@ const Landing = () => {
 				</div>
 			</section>
 
+			<span id="scroll-info" className="scroll-target"></span>
 			<section id="info" className="container">
 				<div className="info-item">
 					<Title text="Some technologies I work with" />

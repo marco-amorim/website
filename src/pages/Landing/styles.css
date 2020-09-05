@@ -88,6 +88,13 @@
 	margin-right: 2rem;
 }
 
+.scroll-target {
+	display: block;
+	height: 50px;
+	margin-top: -50px;
+	visibility: hidden;
+}
+
 @media (max-height: 800px) {
 	.arrow {
 		margin-top: 8rem;
