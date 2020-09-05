@@ -62,7 +62,7 @@ const Portfolio = () => {
 					</a>
 				</div>
 				Personal Website for portfolio and networking, the whole code for this
-				webiste
+				website
 			</li>
 		</section>
 	);
