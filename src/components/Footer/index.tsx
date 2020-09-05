@@ -16,7 +16,7 @@ import emailIconHover from '../../assets/images/icons/social-media/email-hover.s
 
 const Footer = () => {
 	return (
-		<footer className="page-footer">
+		<footer id="page-footer">
 			<div className="copyright">Copyright © 2020 Marco Amorim</div>
 			<ul className="d-flex list-unstyled">
 				<li className="navitem">

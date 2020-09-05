@@ -1,17 +1,15 @@
-.page-footer {
-	/* position: absolute;
-	bottom: 0; */
+#page-footer {
 	width: 100vw;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.page-footer li:not(:last-child) {
+#page-footer li:not(:last-child) {
 	margin-right: 2rem;
 }
 
-.page-footer img {
+#page-footer img {
 	height: 24px;
 	width: 24px;
 }
@@ -23,11 +21,11 @@
 
 /* Desktop */
 @media (min-width: 480px) {
-	.page-footer ul {
+	#page-footer ul {
 		margin: 0;
 	}
 
-	.page-footer {
+	#page-footer {
 		margin-bottom: 1rem;
 		margin-top: 20rem;
 	}
@@ -35,7 +33,7 @@
 
 /* Mobile */
 @media (max-width: 480px) {
-	.page-footer {
+	#page-footer {
 		flex-direction: column-reverse;
 		margin-top: 10rem;
 	}
