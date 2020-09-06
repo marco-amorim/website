@@ -1,10 +1,10 @@
 #portfolio {
-  text-align: center;
-  font-size: 1.5rem;
+	text-align: center;
+	font-size: 1.5rem;
 }
 
 #portfolio a {
-  color: #9147ff;
+	border-bottom: 1px solid #efeff1;
 }
 
 #portfolio a:hover {
@@ -14,13 +14,13 @@
 #portfolio li {
 	display: flex;
 	justify-content: center;
-  flex-direction: column;
-  margin-bottom: 3rem;
+	flex-direction: column;
+	margin-bottom: 3rem;
 }
 
 .project-link {
-  margin-bottom: 1rem;
-  font-size: 1.6rem;
+	margin-bottom: 1rem;
+	font-size: 1.6rem;
 }
 
 /* Mobile */

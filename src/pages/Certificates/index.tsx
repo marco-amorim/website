@@ -48,7 +48,15 @@ const Certificates = () => {
 						rel="noopener noreferrer"
 						target="_blank"
 					>
-						Next Level Week #02 at Rocketseat
+						Next Level Week #02{' '}
+					</a>
+					at{' '}
+					<a
+						href="https://rocketseat.com.br/"
+						rel="noopener noreferrer"
+						target="_blank"
+					>
+						Rocketseat
 					</a>
 				</li>
 			</ul>
