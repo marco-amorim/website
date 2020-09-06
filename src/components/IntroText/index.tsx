@@ -15,7 +15,7 @@ const IntroText = () => {
 				element?.classList.remove('d-none');
 				element?.classList.add('fade-in');
 			}, timeout);
-			timeout += 750;
+			timeout += 850;
 		});
 	}, []);
 
