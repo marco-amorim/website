@@ -101,11 +101,23 @@
 	.info-item {
 		font-size: 1.4rem;
 	}
+
+	#greeting-animation {
+		margin-top: 5rem;
+		margin-bottom: 5rem;
+		height: 12rem;
+	}
 }
 
 /* Desktop */
 @media (min-width: 480px) {
 	.info-item {
 		font-size: 1.5rem;
+	}
+
+	#greeting-animation {
+		margin-top: 7.5rem;
+		margin-bottom: 7.5rem;
+		height: 15rem;
 	}
 }

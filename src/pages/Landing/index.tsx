@@ -2,13 +2,13 @@ import React, { useEffect, useState } from 'react';
 
 import './styles.css';
 
-import AnimatedLogo from '../../components/AnimatedLogo';
-import IntroImg from '../../components/IntroImg';
+import IntroLogo from '../../components/IntroLogo';
 import IntroText from '../../components/IntroText';
 import Title from '../../components/Title';
 import Technologies from '../../components/Technologies';
 
 import arrowDownIcon from '../../assets/images/icons/util/arrow-down.svg';
+import IntroImg from '../../components/IntroImg';
 
 const Landing = () => {
 	const [scrollPosition, setScrollPosition] = useState(window.scrollY);
@@ -31,8 +31,11 @@ const Landing = () => {
 	return (
 		<React.Fragment>
 			<section id="intro" className="container">
-				<AnimatedLogo />
-				<IntroImg />
+				<div id="greeting-animation">
+					<IntroLogo />
+					<IntroImg />
+				</div>
+
 				<IntroText />
 
 				<div id="arrow-container" className="arrow bounce d-none">
