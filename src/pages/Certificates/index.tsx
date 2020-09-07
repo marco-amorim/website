@@ -17,7 +17,7 @@ const Certificates = () => {
 						rel="noopener noreferrer"
 						target="_blank"
 					>
-						Complete Web Development 2020 - 20 courses + 20 projects
+						Complete Web Development - 20 courses + 20 projects
 					</a>
 				</li>
 				<li>
@@ -26,7 +26,7 @@ const Certificates = () => {
 						rel="noopener noreferrer"
 						target="_blank"
 					>
-						Java Complete 2020 Object Oriented Programming + Projects
+						Java Complete Object Oriented Programming + Projects
 					</a>
 				</li>
 				<li>
