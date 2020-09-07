@@ -1,0 +1,12 @@
+#notfound {
+	margin-top: 20vh;
+}
+
+#notfound a {
+	border-bottom: 1px solid #efeff1;
+	margin-top: 5rem;
+}
+
+#notfound a:hover {
+	border-bottom: 1px solid #9147ff;
+}
