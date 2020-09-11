@@ -21,7 +21,7 @@ const Portfolio = () => {
 						Travel Log App
 					</a>
 				</div>
-				A full stack application to store and list places you have traveled
+				Full stack application to store and list places you have traveled
 			</li>
 
 			<li>
@@ -34,7 +34,7 @@ const Portfolio = () => {
 						Proffy
 					</a>
 				</div>
-				A learning platform for students and teachers to schedule private
+				Learning platform for students and teachers to schedule private
 				classes
 			</li>
 
